@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Repo for TrueCoders' Node exercises",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node --trace-warnings --trace-uncaught --async-stack-traces server.js",
+    "dev": "nodemon server.js --exec babel-node --trace-warnings --trace-uncaught --async-stack-traces server.js",
     "start": "babel-node --trace-warnings --trace-uncaught --async-stack-traces server.js"
   },
   "keywords": [
@@ -28,8 +29,8 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
-    "express": "^4.18.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "isomorphic-fetch": "^3.0.0",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1"
